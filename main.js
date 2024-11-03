@@ -9,19 +9,11 @@ async function SORTING(){
 
 SORTING();
 
-async function BINARYS(myNumber){
+async function BINARYS(){
     let binaryS = false 
-    half = Math.floor(NumbersList.length/2)
-    let nextHalf;
-    if (half == myNumber) {
-        binaryS = true
-        console.log("Number found in position number: "  + NumbersList[half])
-    }else if(half < myNumber){
-
-    }else if (half > myNumber){
-
-    }
+    let topIndex = NumbersList[-1]
+    let lowIndex = NumbersList[0]
+    console.log(topIndex, lowIndex)
 }
-
-BINARYS(10)
+BINARYS() 
 
