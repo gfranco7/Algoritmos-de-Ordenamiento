@@ -7,12 +7,11 @@ async function SORTING(){
     console.log(NumbersList)
 }
 
-SORTING();
+//SORTING();
 
 async function BINARYS(mynumber){
-    let binaryS = false 
-    let topIndex = NumbersList.length(-1)
-    let lowIndex = NumbersList[0]
+    let topIndex = NumbersList.length-1;
+    let lowIndex = NumbersList[0];
     let half;
     while(lowIndex < topIndex){
         half = Math.floor(NumbersList.length/2);
@@ -27,4 +26,5 @@ async function BINARYS(mynumber){
     }return console.log('Not found')
      
 }
-BINARYS(10) 
+
+BINARYS(2) 
