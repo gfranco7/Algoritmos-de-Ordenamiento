@@ -1,26 +1,13 @@
 
-
-
-
-
-
-
-
-
-
-
-
-
-async function NumberInverted(mynumber){ 
-    let residuo;
-    let numberInv;
+ async function NumberInverted(){
+    let mynumber =prompt('Ingresa un numero: ') 
+    let numberInv = 0;
     while (mynumber > 0){
-        numberInv = 10*numberInv+n % 10
-        mynumber /=10
+        numberInv = 10*numberInv+mynumber % 10
+        mynumber = Math.floor(mynumber/10)    
     }
 
-    //division2 = division*
-    console.log(numberInv) 
+    alert('Numero invertido => '+numberInv) 
 }
-NumberInverted(123)
+NumberInverted()
 
