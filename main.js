@@ -15,26 +15,23 @@
 
 
 
-//Escribir una programa que calcule los siguientes 3 número de la sucesión 1, 1, 2, -1, 1, -2, -1, ?, ?, ?
 
-
-async function dardos(){
-    let dardos = [];
-    for (let index = 0; index < 100; index++) {
-        dardos.push((Math.random()*2).toFixed(2))
+const simulatorMC = () =>{
+    let dardosIn=0;
+    let dardos=0;
+    
+        for(i=0; i<10000000;i++){
+            let x = Math.random()*2;
+            let y = Math.random()*2;
+    
+            if(1-Math.sqrt(((x-1)**2)+((y-1)**2))>=0){
+                dardosIn+=1;
+            }
+    
+            dardos+=1;
+    
+        }
+        console.log((4*dardosIn)/dardos);
     }
-    console.log(dardos)
-
-}
-
-console.log(dardos(10))
-
-
-async function simulacionMC(){
-    let outpoints;
-    let inpoints;
-
-    console.log(Math.sqrt(9))
-}
-
-simulacionMC()
+    
+    simulatorMC();
